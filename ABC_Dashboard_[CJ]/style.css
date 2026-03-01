@@ -1,0 +1,120 @@
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+  --primary-color: #1b2a49;
+  --secondary-color: #f4f4f4;
+  --accent-color: #3a5f8f;
+  --danger-color: #d9534f;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1rem;
+}
+
+nav .nav-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Main Layout */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Inventory Input */
+.input-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input {
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.input-section button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+.input-section button.danger {
+  background: var(--danger-color);
+}
+
+/* Inventory List */
+.inventory-section ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.inventory-section li {
+  background: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Chart Section */
+.chart-section {
+  margin-top: 2rem;
+}
+
+/* Profile Page */
+.profile {
+  background: var(--secondary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.profile h2 {
+  margin-bottom: 0.5rem;
+}
+
+.profile h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile ul {
+  margin-left: 1rem;
+  list-style: disc;
+}
