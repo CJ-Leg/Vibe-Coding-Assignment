@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Center Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="nav-brand">Command Center</div>
+    <ul>
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="about.html">Developer Profile</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Warehouse Inventory Dashboard</h1>
+
+    <!-- Inventory Input -->
+    <section class="input-section">
+      <input type="text" id="itemName" placeholder="Item Name">
+      <input type="number" id="itemQty" placeholder="Quantity" min="1">
+      <input type="number" id="itemPrice" placeholder="Price ($)" min="0.01" step="0.01">
+      <button id="addItemBtn">Add Item</button>
+      <button id="clearBtn" class="danger">Clear Inventory</button>
+    </section>
+
+    <!-- Inventory List -->
+    <section class="inventory-section">
+      <h2>Current Inventory</h2>
+      <ul id="inventoryList"></ul>
+    </section>
+
+    <!-- Inventory Chart -->
+    <section class="chart-section">
+      <h2>Inventory Value Chart</h2>
+      <canvas id="inventoryChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
